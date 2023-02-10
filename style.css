@@ -1,3 +1,55 @@
-body {
-    background: blue;
+h1 {
+    text-align: center;
+}
+
+#ig {
+    position: fixed;
+    top:0;
+    left:0;
+
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.9;
+    z-index: -2;
+}
+
+#search-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    background: grey;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+.search-bar input {
+    background:transparent;
+    flex:1;
+    border:0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    
+}
+
+.search-bar button img{
+    width: 25px;
+}
+.search-bar button {
+    border: 0;
+    border-radius:49%;
+    width: 60px;
+    height: 60px;
+    background: white;
+    cursor: pointer
+}
+.search-bar input::placeholder {
+    color:white;
+  
 }

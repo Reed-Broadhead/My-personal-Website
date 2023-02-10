@@ -1,4 +1,20 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+// initializes variale
+const search = document.getElementById('search');
 
-document.querySelector("body").appendChild(h2);
+// changes text
+function mouseOn() {
+  search.placeholder = "Search!";
+  
+
+};
+// changes text back
+function mouseOff() {
+  search.placeholder = "search";
+
+};
+
+
+  // event Listeners
+search.addEventListener('mouseover', mouseOn);
+
+search.addEventListener("mouseleave", mouseOff);
